@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400 ;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 148px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: 0.3s linear all;
+    background: rgba(113, 99, 186, 255);
+}
+.sidebar:hover{
+    width: 280px;
+    transition: 0.1s;
+}
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu{
+    height: 88px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 8px 0;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover, .active{
+    background: #e0e0e058;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    
+    width: 100%;
+}
+/* main body section */
+.main--content{
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+
+}
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.header--title{
+    color: rgba(113, 99, 186, 255);
+}
+.user--infor{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search-box{
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+.search-box input{
+    background: transparent;
+    padding: 10px;
+}
+.search-box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s all ease-out;
+}
+.search-box i:hover{
+    transform: scale(1.5);
+}
+/* card container */
+.card--container{
+    padding: 1rem;
+    border-radius: 10px;
+    background: #ffff;
+}
+.main-title{
+    font-size: 16px;
+    font-weight: 600
+}
+/* main */
+.main{
+    padding: 3rem;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    height: auto;
+}
+/* Phần trong main */
+.table{
+    width: 100%;
+}
+.table--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #5b323258;
+}
+.table--header p{
+    color: black;
+}
+.btn{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 16px;
+}
+.btn i{
+    text-decoration: none;
+    color: #5b323258;
+}
+td .btn i:nth-child(1){
+background-color: #f6f9fc;
+}
+td .btn i:nth-child(2){
+    background-color: #7c7eb458;
+}
+
+.add--new{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #5f739558;
+}
+.input{
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid #7c7eb458;
+    border-radius: 10px;
+}
+.table--section{
+    height: 450px;
+    overflow: auto;
+}
+thead th{
+    position: sticky;
+    top:0;
+    background-color: #f6f9fc;
+    font-size: 16px;
+}
+th, td{
+    border-bottom: 0.5px solid #dddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+    border-radius: 4px;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+::placeholder{
+    color: #3c435a58;
+}
+/* table sản phẩm */
+.product--img{
+    height: 48px;
+    width: 48px;
+    border-radius: 4px;
+    object-fit: cover   ;
+}
+.btn:hover{
+    background-color: #7c7eb458;
+    color: #905b5bdd;
+}
+tr th{
+    font-size: 16px;
+}
+/* **************Table user************* */
+/* **************Table category************* */
+.select--category{
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid #7c7eb458;
+    border-radius: 10px;
+}
+/* ADD AND EDIT BOOK */
+.containerr {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group img{
+    width: 128px;
+    height: 128px;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.containerr input[type="text"],
+.containerr input[type="number"],
+.containerr input[type="date"] {
+    width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+}
+.inputt{
+    padding: 20px;
+}
+/* Category */
+.main--container {
+    grid-area: main;
+    overflow: hidden;
+    padding: 20px 20px;
+}
+
+.main--card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.cardd {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #d2d2d3;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+.cardd:first-child {
+    border-left: 7px solid #246dec;
+}
+
+.cardd:nth-child(2) {
+    border-left: 7px solid #f5b74f;
+}
+
+.cardd:nth-child(3) {
+    border-left: 7px solid #58554e;
+}
+
+.cardd span {
+    font-size: 20px;
+    font-weight: 600;
+}
+.card--total{
+    background-color: #161515;
+    color: #fff;
+}
+.card--inner {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+.card--inner a{
+    padding-left: 12px;
+    font-weight: 800px;
+}
+.card--inner p {
+    font-size: 18px;
+}
+
+.card--inner span {
+    font-size: 32px;
+}
+
+.card--inner {
+    padding-left: 5px;
+    margin: 2px;
+}
+
+.card--inner a {
+    text-decoration: none;
+    color: #58554e;
+}
+.main--card--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
